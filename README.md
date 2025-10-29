@@ -17,8 +17,8 @@
 ## System Design
 <img width="825" height="346" alt="캡스톤 구성도" src="https://github.com/user-attachments/assets/e38ef747-f70d-42b4-ba53-81a58b095d4c" />
   - ### System Requirements
-    - OOO
-    - OOO
+    - ### OOO
+    - ### OOO
     
 ## Case Study
   - ### Description
