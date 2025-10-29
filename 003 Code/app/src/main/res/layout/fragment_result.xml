@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">  <!-- 중요: ScrollView가 전체 화면을 채우도록 설정 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            > <!-- 중앙 정렬 추가 -->
+
+            <ImageView
+                android:id="@+id/imageViewResult"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:contentDescription="분석한 이미지"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp" />  <!-- 아래 간격 추가 -->
+
+            <TextView
+                android:id="@+id/textViewResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="분석 결과가 여기에 표시됩니다."
+                android:textAlignment="center"
+                android:textColor="#22437A"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/true_button"
+                android:layout_marginBottom="20dp"
+                android:minHeight="60dp"
+                android:gravity="center"
+                />
+
+            <Button
+                android:id="@+id/resultDownload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/download_button"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="결과 저장"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:clipToOutline="true" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

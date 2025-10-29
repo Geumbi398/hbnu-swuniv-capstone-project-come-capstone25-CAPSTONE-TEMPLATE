@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.myapplication_github.ui.home.HomeFragment"
+        android:label="AI Holmes"
+        tools:layout="@layout/fragment_home">
+
+        <!-- HomeFragment -> ResultFragment 이동 액션 -->
+        <action
+            android:id="@+id/action_homeFragment_to_resultFragment"
+            app:destination="@id/nav_result" />
+        <!-- HomeFragment -> CameraFragment 이동 액션 -->
+        <action
+            android:id="@+id/action_homeFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.myapplication_github.ui.gallery.GalleryFragment"
+        android:label="결과 조회"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.myapplication_github.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <!-- ✅ 추가: ResultFragment -->
+    <fragment
+        android:id="@+id/nav_result"
+        android:name="com.example.myapplication_github.ui.result.ResultFragment"
+        android:label="결과 화면"
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_resultFragment_to_homeFragment"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+    <!-- ✅ 추가: CameraFragment -->
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.example.myapplication_github.ui.camera.CameraFragment"
+        android:label="카메라"
+        tools:layout="@layout/fragment_result">
+
+        <!-- CameraFragment -> ResultFragment 이동 액션 -->
+        <action
+            android:id="@+id/action_cameraFragment_to_resultFragment"
+            app:destination="@id/nav_result" />
+
+    </fragment>
+</navigation>
+
+
