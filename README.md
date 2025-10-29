@@ -17,8 +17,9 @@
 ## System Design
 <img width="825" height="346" alt="캡스톤 구성도" src="https://github.com/user-attachments/assets/e38ef747-f70d-42b4-ba53-81a58b095d4c" />
   - ### System Requirements
-    - ### OOO
-    - ### OOO
+    - 탐지 결과 표시: 딥페이크인지 아닌지 확실하게 표시(색으로 구분), 신뢰도도 함께 표시
+    - 이전 결과 확인: 이전에 업로드했던 이미지 결과 조회 가능
+    - 이미지 업로드: 이미지 확장자 및 용량 제한
     
 ## Case Study
   - ### Description
